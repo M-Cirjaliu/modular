@@ -28,7 +28,7 @@ class Application extends Container
      *
      * @var string $version
      */
-    protected $version;
+    protected $version = "1.0.0";
 
     /**
      * Application base path
@@ -201,5 +201,15 @@ class Application extends Container
     public function storagePath($path = ''): string
     {
         return $this->basePath . DIRECTORY_SEPARATOR . 'storage' . ($path ? DIRECTORY_SEPARATOR . $path : $path);
+    }
+
+    /**
+     * Get application version
+     *
+     * @return string
+     */
+    public function version(): string
+    {
+        return $this->version;
     }
 }

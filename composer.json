@@ -25,6 +25,12 @@
   "autoload": {
     "psr-4": {
       "Modular\\": "src/"
-    }
+    },
+    "files": [
+      "src/Helpers/base.php"
+    ]
+  },
+  "config": {
+    "sort-packages": true
   }
 }
